@@ -27,10 +27,14 @@ def visualize_array(array):
     plt.show()
 
 if __name__ == "__main__":
-    random_array = generate_random_array(20,40,0,10)
+    minsize = 50
+    maxsize = 50
+    minval = 0
+    maxval = 50
+    random_array = generate_random_array(minsize, maxsize, minval, maxval)
     print(random_array)
     multiples_of_10_array = generate_random_multiples_of_10()
-    hardcoded_array = [3,4,3,2,1,2,3,4,3,2,1]
+    # hardcoded_array = [3,4,3,2,1,2,3,4,3,2,1]
 
     visualize_array(random_array)
     # visualize_array(hardcoded_array)
