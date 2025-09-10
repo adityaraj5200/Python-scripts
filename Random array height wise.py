@@ -29,7 +29,12 @@ def visualize_array(array):
 if __name__ == "__main__":
     minsize = 50
     maxsize = 50
-    minval = 0
+    minval = 0hello 342
+    hello 343
+    hello 344
+    hello 345
+    hello 346
+    he
     maxval = 50
     random_array = generate_random_array(minsize, maxsize, minval, maxval)
     print(random_array)

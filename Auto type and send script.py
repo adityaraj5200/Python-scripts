@@ -3,10 +3,10 @@ import time
 
 time.sleep(3)  # Give yourself 10 sec to click into the WhatsApp chat
 
-friend_name = "Ishita"
+friend_name = "Arvind"
 
 # Send the intro message
-pyautogui.typewrite(f"Hey {friend_name}, today I have a lot of time. So today I will send you 'hello' 1000 times 😂")
+pyautogui.typewrite(f"Hey {friend_name}, Get ready for 'I will hang your phone' 1000 times 😼")
 pyautogui.press("enter")
 
 # Spam hello 1000 times
