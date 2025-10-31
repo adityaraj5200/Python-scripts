@@ -60,7 +60,7 @@ def calculate_old_regime_tax(income):
 
 
 if __name__ == "__main__":
-    salary = 24_00_000
+    salary = 15_00_000
 
     post_tax_new = calculate_new_regime_tax(salary)
     post_tax_old = calculate_old_regime_tax(salary)
@@ -70,10 +70,14 @@ if __name__ == "__main__":
     print(f"\n🧾 Old Regime:")
     print(f"  • Post-tax annual salary: {format_inr(post_tax_old)}")
     print(f"  • Post-tax monthly salary: {format_inr(post_tax_old / 12)}")
+    print(f"  • Tax given annually: {format_inr(salary-post_tax_old)}")
+    print(f"  • Tax given monthly: {format_inr((salary-post_tax_old) / 12)}")
 
     print(f"🆕 New Regime:")
     print(f"  • Post-tax annual salary: {format_inr(post_tax_new)}")
     print(f"  • Post-tax monthly salary: {format_inr(post_tax_new / 12)}")
+    print(f"  • Tax given annually: {format_inr(salary-post_tax_new)}")
+    print(f"  • Tax given monthly: {format_inr((salary-post_tax_new) / 12)}")
 
     # print("\n💡 Suggestion:")
     # if post_tax_new > post_tax_old:
