@@ -60,7 +60,7 @@ def calculate_old_regime_tax(income):
 
 
 if __name__ == "__main__":
-    salary = 15_00_000
+    salary = 24_00_000
 
     post_tax_new = calculate_new_regime_tax(salary)
     post_tax_old = calculate_old_regime_tax(salary)
