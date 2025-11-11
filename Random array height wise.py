@@ -27,14 +27,9 @@ def visualize_array(array):
     plt.show()
 
 if __name__ == "__main__":
-    minsize = 50
-    maxsize = 50
-    minval = 0hello 342
-    hello 343
-    hello 344
-    hello 345
-    hello 346
-    he
+    minsize = 100
+    maxsize = 100
+    minval = 1
     maxval = 50
     random_array = generate_random_array(minsize, maxsize, minval, maxval)
     print(random_array)
