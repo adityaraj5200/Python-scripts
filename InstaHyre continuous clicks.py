@@ -4,7 +4,7 @@ import keyboard
 import random
 
 # === Configuration ===
-clicks = 100          # total number of clicks
+num_clicks = 23          # total number of clicks
 base_delay = 1.0      # base delay between clicks (seconds)
 delay_jitter = 0.05   # +/- jitter in seconds (i.e., 50ms)
 buffer = 1            # wait before clicking starts
@@ -16,11 +16,11 @@ print(f"Move your mouse to the desired point. Starting in {buffer} seconds...")
 time.sleep(buffer)
 
 x, y = pyautogui.position()
-print(f"Clicking at ({x}, {y}) {clicks} times with random timing. Press '{stop_key}' to stop.\n")
+print(f"Clicking at ({x}, {y}) {num_clicks} times with random timing. Press '{stop_key}' to stop.\n")
 
 click_count = 0
 try:
-    for i in range(clicks):
+    for i in range(num_clicks):
         if keyboard.is_pressed(stop_key):
             print(f"\nStopped manually after {click_count} clicks.")
             break

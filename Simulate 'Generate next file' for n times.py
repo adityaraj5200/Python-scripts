@@ -26,7 +26,7 @@ if __name__ == "__main__":
     # ================
     # USER INPUT AREA
     # ================
-    n_times = 19        # Number of repetitions
+    n_times = 5        # Number of repetitions
     interval_seconds = 20   # Interval between repetitions (in seconds)
 
     auto_type_and_press(n_times, interval_seconds)
