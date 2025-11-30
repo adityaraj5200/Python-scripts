@@ -4,10 +4,10 @@ import keyboard
 import random
 
 # === Configuration ===
-num_clicks = 23          # total number of clicks
-base_delay = 1.0      # base delay between clicks (seconds)
+num_clicks = 16          # total number of clicks
+base_delay = 2.0      # base delay between clicks (seconds)
 delay_jitter = 0.05   # +/- jitter in seconds (i.e., 50ms)
-buffer = 1            # wait before clicking starts
+buffer = 5            # wait before clicking starts
 stop_key = 'esc'      # emergency stop key
 
 pyautogui.FAILSAFE = True  # move to top-left corner to abort
